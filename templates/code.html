@@ -1,0 +1,61 @@
+{% extends 'layout.html' %}
+{% block body %}
+<div class=header>
+    <div style='height:100px'></div>
+    <div style='float:left; width:50%; text-align:right'>
+        <a href='https://github.com/jamesmcnamara' style='text-indent:1em'>
+            <img height=140 src='/static/imgs/github.png'>
+        </a> 
+    </div>
+    <div style='float:right;width:50%; text-align:left'>
+        <h1 style='text-indent:1em'>Projects</h1>
+    </div>
+    <div style='clear:both'></div>
+</div>
+<div class=java>
+    <div class=left>
+        <p style='border-bottom: 1px solid #ddd'><img height=100 src="http://www.centrog.com/technology/images/java_logoTransparent.png">
+            <img height=100 src='http://etc-mysitemyway.s3.amazonaws.com/icons/legacy-previews/icons/glossy-silver-icons-alphanumeric/071076-glossy-silver-icon-alphanumeric-plus-sign-simple.png'>
+	    <img height=100 src="http://bencollier.net/wp-content/uploads/2011/04/android-transparent.png">
+        </p>
+        <h1 class=dark_h1>Sudo Sudoku</h1>
+            <h2 class=dark_h2>Question?</h2>
+            What's the best way to cheat at Sudoku and look smart to that pretty girl on the train?<br><br>
+            <h2 class=dark_h2>Answer</h2>
+            Just take a picture of it with Sudo Sudoku!<br><br><br>
+        
+            <p>Sudo Sudoku is an app that uses computer vision algorithms coupled with OCR to digitize Sudoku boards, and then uses some home-grown AI logic to return the solved puzzle.</p>
+    <div style='height:30px'></div>
+    <a href='#'><h2 style='font-weight:bold'>Source Code</h2></a>
+</div>
+<div class=right>
+</div>
+<div class=clear></div>
+</div>
+<div class=python>
+<div class=left>
+    <div style='height:10px;'></div>
+    <img height=80 src='http://www.python.org/community/logos/python-logo-master-v3-TM.png'>
+ <img height=80 src='http://etc-mysitemyway.s3.amazonaws.com/icons/legacy-previews/icons/glossy-silver-icons-alphanumeric/071076-glossy-silver-icon-alphanumeric-plus-sign-simple.png'>
+<img height=80 src="http://flask.pocoo.org/static/logo/flask.png"> 	
+
+</div>
+<div class=right style='text-align:right'>
+    <div class=space></div>
+    <h1 style='border-bottom:1px solid #377b91'>iMadeIT.nu</h1>
+    <em>Eagle-eyed viewers may realize that both this site and that site have very similar layouts. I am no web designer!</em>
+    <p style='text-align:left'>iMadeIT is a program I ran with for the <a href='http://www.northeastern.edu/entrepreneurs/'>Northeastern Entrepreneurs Club</a> that teaches students with any level of programming background the fundamentals of web development in Flask by creating a Facebook clone.
+    <br><br>
+    To provide a sandbox for students, and add to the "Hey Mom, look what I made!" factor, I created <a href='imadeit.nu'>iMadeIT.nu</a>, which, after a user created an account on the website, created an identical account on the server that they could SSH into, and host their web app on our domain.
+    <br><br>
+    In addition, the site serves as a one-stop source for information about events, activities, as well as the source code to the site itself, other smaller web-apps, and other useful python resources
+<br><br>
+<a href='https://github.com/imadeitnortheastern/spring2014/tree/master/imadeit_website'><h2>Source Code</h2></a>
+</div>
+<div class=clear></div>
+</div>
+
+{% assets 'comments' %}
+	<script type='text/javascript' src='{{ ASSET_URL }}'></script>
+{% endassets %}
+{% endblock %}

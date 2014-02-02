@@ -1,0 +1,145 @@
+body { 
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 350; 
+    background: #eee; 
+}
+
+a,h1,h2,h3, .header { 
+    color: #377ba8; 
+}
+
+h1, h2, h3, .header { 
+    font-family: 'Open Sans', serif; 
+    margin: 0; 
+    font-weight: 300
+}
+
+h2 { 
+    font-size: 1.2em; 
+}
+
+img { 
+    display:inline-block; 
+    *display:inline 
+}
+
+p {
+    margin:0.5em
+}
+ 
+.page { 
+    margin: 2em auto; 
+    width: 70em; 
+    border: 5px solid #ccc;
+    padding: 0.8em; 
+    background: white; }
+
+.metanav, .sub_menu { 
+    font-size: 0.8em; 
+    padding : 0; 
+    border: 2px solid #aaa;
+    background: #cacaca; 
+    text-align: justify; 
+    position: relative }
+
+.sub_menu { 
+    height:40px 
+}
+
+.navbutton { 
+    display: block; 
+    float: left; 
+    font-size: 1.4em; 
+    color: #fff; 
+    font-weight: 400; 
+    padding: 5px 2% 5px 2%; 
+    text-align: center; 
+    text-decoration: none 
+}
+
+.top_nav { 
+    width: 16% 
+}
+
+.res_nav { 
+    width: 21% 
+} 
+
+.stretch { 
+    display: inline-block; 
+    line-height: 0; 
+    width:100%; 
+    text-align: justify 
+}
+
+.span_stretch { 
+    display: inline-block; 
+    width: 100% 
+}
+
+.sub_menu { 
+    position: absolute; 
+    top: 500px; 
+    z-index: 100; 
+    width:1120px; 
+    height:34px 
+}
+
+.academic, .work, .cs, .interests, .java, .python { 
+    height: 580px 
+}
+
+.academic, .cs, .java	{ 
+    background: #494949; 
+    color: #ddd 
+}
+
+.active	{ 
+    background: #377ba8; 
+    color:#eee
+}
+
+.end { 
+    margin: 0 
+}
+
+.dark_h1, .dark_h2 { 
+    color: #eee 
+}
+
+.dark_h2, a { 
+    font-weight: bold; 
+    text-decoration: underline 
+}
+
+.space { 
+    margin-top: 30px 
+}
+
+.header { 
+    height:388px; 
+    width:100%; 
+    text-align:center;
+    font-size:3em; 
+}
+
+.tv, .music, .other {
+    width : 33%;
+    float:left;
+    height : 90%;
+    border-right:2px double #377ba8;
+}
+
+.left {
+    float:left;
+    width:50%;
+}
+
+.right {
+    float:right;
+    width:50%;
+}
+
+.clear {
+    clear:both;
+}

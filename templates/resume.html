@@ -1,0 +1,155 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<div class="metanav sub_menu">
+        <a href="#" id=academic class="navbutton res_nav active">Academic</a>
+        <a href="#" id=work class="navbutton res_nav">Work Experience</a>
+        <a href="#" id=cs class="navbutton res_nav">Software Abilities</a>
+        <a href="#" id=interests class="navbutton res_nav end">Interests</a>
+	<span class=span_stretch />
+</div>
+<div class=header>
+        <div style='height:30px'></div>
+        <h1>R&eacute;sum&eacute;</h1>
+</div>
+<div class=academic>
+	<br>
+	<h1 class=dark_h1>Academic</h1>
+	<img align=right hspace=100 src="static/imgs/neu.png">
+	<div class=space></div>
+	<h2 class=dark_h2>Majors</h2>
+		<ul>Computer Science and Mathematics</ul>
+	<div class=space></div>
+	<h2 class=dark_h2>GPA</h2>
+		<ul>3.88 / 4</ul>
+	<div class=space></div>
+	<h2 class=dark_h2>Activities</h2>
+		<ul>Tutor for Fundamentals of Computer Science 2 (Introduction to Object-Oriented Programming)</ul>	
+		<ul>Director of <a href=http://www.northeastern.edu/entrepreneurs/programs/imadeit/>iMadeIT</a>, a	
+		 program designed to give students with little to no background in programming an introduction to web
+		 development in Python</ul>
+		<ul>Member of the Executive Board of the <a href=http://www.northeastern.edu/entrepreneurs>Northeastern
+		Entrepreneur's Club</a></ul>
+	<div class=space></div>
+	<h2 class=dark_h2>Awards</h2>
+		<ul>Dean's List (2010, 2011, 2012, 2013)</ul>
+</div>
+<div class=work style="height:1200px">
+	<br>
+    	<h1>Work Experience</h1>
+	<img height=60 width=240 
+	src="http://graduateinstitute.ch/files/live/sites/iheid/files/shared/carriere/Connexion/img/credit_suisse_logo_big.jpg">
+	<h2>Model Development Co-op</h2>
+	<div>
+		<div class=left><em>Chicago, IL</em></div>
+		<div class=right style='text-align:right'>January 2013 - July 2013</div>
+		<div class=clear></div>
+	</div>
+	<ul>Conducted quantitative macroeconomic equity research exploring risk factors stemming from both enterprise 
+	capital structure and model biases</ul>
+	<ul>Designed R programs to expansively test the statistical significance of identified risk factors across
+	a variety of sample populations, as well as optimizing legacy algorithms, greatly increasing performance</ul>
+	<ul>Developed data-visualization tools in R and Visual Basic to integrate with existing SQL backends and
+	 analyze vast data sets, highlight potential discrepancies, and create user friendly dynamic charts allowing
+	 users to dive into regions, sectors and even specific outlier companies</ul>
+	<div class=space></div>
+	<img src="http://www.jhannuities.com/media/usa/common/firmlogo/153w.jpg">
+	<h2>Investment Control Analyst</h2>
+	<div>
+		<div class=left><em>Boston, MA</em></div>
+		<div class=right style='text-align:right'>January 2012 - July 2012</div>
+		<div class=clear></div>
+	</div>
+	<ul>Reconciled over $26 Bn. worth of publicly traded funds, client held funds, and other financial packages 
+	on a daily basis by analyzing discrepancies between internal accounting systems and custodian bank records, 
+	researching with various financial databases, and adjusting accounting records or inquiring with custodians </ul>
+
+	<ul> Constructed monthly net asset valuations used for billing that tied the firm’s records to custodian records, as
+	well as providing additional reports on income receipts, equity trades, and derivative expirations for clients</ul>
+
+	<ul> Served as primary trainer for new hire, and created an extensive resource manual explaining systems in depth 
+	 Instructed daily margin adjustments on futures accounts, as well as reconciliation for collateral movements 
+	and foreign currency repatriation</ul>
+	<div class=space></div>
+	<img width=400 height=80 src="http://telecomnewsroom.com/wp-content/uploads/2013/01/images-101.jpg">
+	<h2>Intern, CTO's Office</h2>
+	<div>
+		<div class=left><em>Herndon, VA</em></div>
+		<div class=right style='text-align:right'>June 2011 - August 2011</div>
+		<div class=clear></div>
+	</div>
+	<ul>Provided strategic input and performed capital budgeting for new technology business ventures such as
+	Content Delivery Networks and a wireless initiative</ul>
+	<ul>Consistent work with Excel and PowerPoint, building analytical reports with a large degree of freedom,
+	designing them to be easily and quickly understandable</ul>
+	<ul>Conducted extensive market research, building charts and tables to compare competitors and potential
+	prospects (e.g. comparing strength of software, network size, etc.)</ul>
+	<ul>Generated leads by building contact lists in the advertising and media industries</ul>
+
+</div>
+<div class=cs>
+    	<h1 class=dark_h1>Software Abilities</h1>
+	<em>Please visit the <a href="{{ url_for('code') }}">Code</a> section to see code samples and more inforamtion 
+	on projects</em>
+	<div class=space></div>
+	<h1 class=dark_h1 style="border-bottom: 2px solid #eee;">Languages</h1>
+	<div class=space></div>
+	<div class=stretch>
+		<img height=75 src="http://www.centrog.com/technology/images/java_logoTransparent.png">
+		<img height=75 src="http://www.foosandbars.com/images/python-logo-master-v3-TM.png">
+		<img height=75 src="http://bencollier.net/wp-content/uploads/2011/04/android-transparent.png">
+		<img height=75 src="/static/R.png">
+		<img height=75 src="http://ozekiphone.com/attachments/744/vb-logo_transparent.png">
+		<img height=75 src="http://www.arelion.com/media/707db726-94fa-4bd9-abec-fd33c486dedf/Logos/LOGO_SQL_RGB_transparent_gif">
+		<span class=span_stretch />
+	</div>
+	<div style="height:20px"></div>
+	<div class=left>
+		<h1 class=dark_h1 style="border-bottom: 2px solid #eee">Operating Systems</h1>
+			<ul><img height=80 src="http://3.bp.blogspot.com/-bgNO7WW-v8M/UN1L8u8lohI/AAAAAAAAAKs/_5QZc0KG1J0/s640/transparent_ubuntu_logo.png"></ul>
+			<ul><img height=100 src="/static/imgs/win7.png"></ul>
+	</div>
+	<div class=right>
+		<h1 class=dark_h1 style="border-bottom: 2px solid #eee">Applications, Tools, and Frameworks</h1>
+			<div class=stretch>
+                            <img height=80 src="http://flask.pocoo.org/static/logo/flask.png"> 	
+                            <img height=100 hspace=100 src="http://xcodelovers.files.wordpress.com/2011/02/180px-opencv_logo_with_text.png">
+				<span class=span_stretch />
+			</div>
+			<br><br>
+			<div class=stretch>
+				<img height=80 src="/static/imgs/github.png">
+				<img height=80 src="/static/imgs/excel1.png"> 
+
+				<span class=span_stretch> </span>
+			</div>
+	</div>
+	<div class=both></div>
+</div>
+<div class=interests>
+    <h1>Interests</h1>
+    <div class=tv>
+        <center>
+            <img height=240 src='http://2.bp.blogspot.com/-Pl9qyf4dbpM/UCDhH2c5M5I/AAAAAAAAGzI/4DwPV_SsOks/s1600/youtubeyl7.png'> 
+        </center>
+    <h1 style='border-bottom:1px solid #ddd'>Television</h1>
+    <p>I am a man who loves his television. Hour and a half episodes of <em>Sherlock</em>, 15 minute clips of <em>Scooby Doo</em>, I take all comers like Muhammad Ali or the Statue of Liberty. I'll save your time and my dignity by refraining from an exhaustive list, but drop in a quote from any episode of <em>Friends, Party Down, Breaking Bad, The Wire, Bob's Burgers, Family Guy, How I Met Your Mother, Fresh Prince, Community, </em> or <em>Brooklyn Nine-Nine</em> and we'll get along just fine.    </p>
+    </div>
+    <div class=music>
+    <center>
+        <img height=160 src='https://discussions.apple.com/servlet/JiveServlet/showImage/2-16575277-48322/Music-App-Icon.jpg'>
+    </center>
+    <h1 style='border-bottom:1px solid #ddd; text-indent:0.1em'>Music</h1>
+    <p>Like many software peoples, I consume music vociferously and compulsively. If you recommend an album to me, I wil ACTUALLY listen to it, and probably also everything else the group/artist ever produced, dating back to their middle school production of <em>Guys and Dolls</em>. 
+Rest assured, if you put on any Electronic, Indie Rock, Hip Hop, Jazz, Pop, Funk, Soul, Folk, Psychedelic, Jam, Surf Rock or even Classical, I will publicly and embarassingly sing and dance along. Just please: No Country.</p>
+    </div>
+    <div class=other style='border-right-style:hidden'>
+    <center>
+        <img height=200 src='http://25.media.tumblr.com/tumblr_md22kl7DXP1qdp483o1_1280.png'>
+    </center>
+    <h1 style='border-bottom:1px solid #ddd;text-align:right'>...And The Rest</h1>
+    <p style='margin-right:0em'>I fill my idle time with a myriad of bizarre hobbies and obsessions. I've been a runner for 11 years now (I even wear those short-shorts in the winter), I hike, climb, ski and roll down hills. On the inside spectrum, I internet pretty hard. What's your favorite sub-reddit is a question I riddle most anyone I meet, and their answer's often send me down a mildly amusing rabbit hole. I light up like a firefly when the new xkcd comes out, and I check cracked like it was CNN. Oh! I also love movies, but I think I'm running out of space, and you know how expensive internet real estate can be.</p>
+    </div>
+    <div class=clear></div>
+</div>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+{% block body %}
+    <h1>Code</h1>
+	<a href="#" id=hello>hi</a>
+
+{% assets 'comments' %}
+	<script type='text/javascript' src='{{ ASSET_URL }}'></script>
+{% endassets %}
+{% endblock %}
