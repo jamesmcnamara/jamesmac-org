@@ -147,3 +147,8 @@ p {
 .header_underline {
     border-bottom:1px solid #377b91;
 }
+
+.post p {
+    text-indent:3em;
+    padding-bottom:1em;
+}
