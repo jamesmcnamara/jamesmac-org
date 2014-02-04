@@ -143,3 +143,7 @@ p {
 .clear {
     clear:both;
 }
+
+.header_underline {
+    border-bottom:1px solid #377b91;
+}
