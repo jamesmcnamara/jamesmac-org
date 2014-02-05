@@ -5,9 +5,11 @@ app = Flask(__name__)
 assets = Environment(app)
 
 smint = Bundle('js/jquery.smint.js')
+scroll_to_top = Bundle('js/to-top.js')
 comments = Bundle('js/comments.js')
 
 assets.register('smint', smint)
+assets.register('scroll_to_top', scroll_to_top)
 assets.register('comments', comments)
 
 @app.route('/')

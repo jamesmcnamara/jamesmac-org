@@ -26,6 +26,13 @@ img {
 p {
     margin:0.5em
 }
+
+#back-to-top {
+    position:fixed;
+    bottom:60px;
+    left:20px;
+    display:none;
+} 
  
 .page { 
     margin: 2em auto; 
@@ -40,7 +47,7 @@ p {
     border: 2px solid #aaa;
     background: #cacaca; 
     text-align: justify; 
-    position: relative }
+}
 
 .sub_menu { 
     height:40px 
@@ -52,7 +59,7 @@ p {
     font-size: 1.4em; 
     color: #fff; 
     font-weight: 400; 
-    padding: 5px 2% 5px 2%; 
+    padding: 15px 2% 0px 2%; 
     text-align: center; 
     text-decoration: none 
 }
@@ -62,7 +69,8 @@ p {
 }
 
 .res_nav { 
-    width: 21% 
+    width: 21%;
+    padding:5px 2% 5px 2%;
 } 
 
 .stretch { 
@@ -117,7 +125,7 @@ p {
 }
 
 .header { 
-    height:388px; 
+    height:380px; 
     width:100%; 
     text-align:center;
     font-size:3em; 
@@ -151,4 +159,11 @@ p {
 .post p {
     text-indent:3em;
     padding-bottom:1em;
+}
+
+.contact {
+    width : 33%;
+    float:left;
+    height : 90%;
+    border-right:2px double #377ba8;
 }

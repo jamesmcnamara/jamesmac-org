@@ -14,10 +14,15 @@
                     'scrollSpeed':500
                 });
             });
-        </script>
+        </script>  
+        {% assets "scroll_to_top" %} 
+             <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+        {% endassets %}
+
     </head>
-    <body>    
+    <body> 
         <div class=page>
+        
             <h1>Meet James</h1>
             <div class=metanav>
                     <a href="{{ url_for('home') }}" class="navbutton top_nav">about</a>
@@ -30,5 +35,6 @@
             {% block body %}
             {% endblock %}
         </div>
-    </body>        
-</html>    
+        <a id=back-to-top href=#><img src='http://nrw-kultur.de/fileadmin/templates/iconfiles/topIcon.png'></a>
+    </body>     
+   </html>    
