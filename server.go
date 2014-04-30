@@ -3,11 +3,13 @@ package main
 import (
 		"bytes"
 		"fmt"
-		"text/template"
+		"log"
 		"net/http"
 		"os"
 		"strings"
+		"text/template"
 		)
+var logger = openLogFile("./.server_log.txt")
 
 var html_prefix string = "templates"
 var html_files = []string{"/about", "/blog", "/code", "/contact", 
@@ -21,6 +23,21 @@ var mux *http.ServeMux = http.NewServeMux()
 type Page struct {
 	title string
 	content string
+}
+
+//Opens the given file for use as a log file for errors in this
+//server. If the file does not exist, it creates it, otherwise,
+//it opens it with append privileges 
+func openLogFile(filename string) *log.Logger {
+	log_file, err := os.OpenFile(filename, os.O_RDWR | os.O_APPEND, 0660)
+	if err != nil {
+		if os.IsNotExist(err) {
+			log_file, _ = os.Create(filename)
+		} else {
+			panic(err)
+		}
+	}
+	return log.New(log_file, "Server Error: ", log.Ldate | log.Ltime)
 }
 
 //consumes a file name, and returns a pointer to the 
@@ -87,15 +104,15 @@ func handler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	err := loadHTMLFiles()
 	if err != nil {
-		panic(err)
+		logger.Println(err)
 	}
 	layout_temp, err := template.ParseFiles(html_prefix + "/layout.html")
 	if err != nil {
-		panic(err)
+		logger.Println(err)
 	}
 	templateHTMLFiles(layout_temp)
 	mux.Handle("/", http.FileServer(http.Dir("./")))
 	http.HandleFunc("/", handler)
-	http.ListenAndServe("0.0.0.0:80", nil)
+	logger.Println(http.ListenAndServe(":80", nil))
 }
 
