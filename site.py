@@ -1,3 +1,7 @@
+#DEPRECATED
+#NO LONGER USED
+#SEE SERVER.GO
+
 from flask import Flask, url_for, render_template, redirect
 from flask.ext.assets import Environment, Bundle
 

@@ -1,6 +1,3 @@
-{% extends 'layout.html' %}
-{% block body %}
-
 <div class="metanav sub_menu">
         <a href="#" id=academic class="navbutton res_nav active">Academic</a>
         <a href="#" id=work class="navbutton res_nav">Work Experience</a>
@@ -89,13 +86,13 @@
 </div>
 <div class=cs>
     	<h1 class=dark_h1>Software Abilities</h1>
-	<em>Please visit the <a href="{{ url_for('code') }}">Code</a> section to see code samples and more inforamtion 
+	<em>Please visit the <a href="/code">Code</a> section to see code samples and more inforamtion 
 	on projects</em>
 	<div class=space></div>
 	<h1 class=dark_h1 style="border-bottom: 2px solid #eee;">Languages</h1>
 	<div class=space></div>
 	<div class=stretch>
-		<img height=75 src="http://www.centrog.com/technology/images/java_logoTransparent.png">
+		<img height=75 src="/static/imgs/java.png">
 		<img height=75 src="http://www.foosandbars.com/images/python-logo-master-v3-TM.png">
 		<img height=75 src="http://bencollier.net/wp-content/uploads/2011/04/android-transparent.png">
 		<img height=75 src="/static/R.png">
@@ -153,4 +150,3 @@ Rest assured, if you put on any Electronic, Indie Rock, Hip Hop, Jazz, Pop, Funk
     </div>
     <div class=clear></div>
 </div>
-{% endblock %}

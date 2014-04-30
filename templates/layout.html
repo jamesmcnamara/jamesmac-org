@@ -2,12 +2,12 @@
 <html>
     <head>
         <title>James McNamara</title>
-        <link rel=stylesheet type=text/css href="{{ url_for('static', filename = 'style.css') }}">
+        <link rel=stylesheet type=text/css href="/static/style.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
  	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	{% assets "smint" %}
-		<script type="text/javascript" src="{{ ASSET_URL }}"></script>
-	{% endassets %}
+
+		<script type="text/javascript" src="static/js/jquery.smint.js"></script>
+
 	<script type="text/javascript">
             $(document).ready( function() {
                 $('.sub_menu').smint({
@@ -15,9 +15,9 @@
                 });
             });
         </script>  
-        {% assets "scroll_to_top" %} 
-             <script type="text/javascript" src="{{ ASSET_URL }}"></script>
-        {% endassets %}
+
+             <script type="text/javascript" src="/static/js/to-top.js"></script>
+
 
     </head>
     <body> 
@@ -25,16 +25,15 @@
         
             <h1>Meet James</h1>
             <div class=metanav>
-                    <a href="{{ url_for('home') }}" class="navbutton top_nav">about</a>
-                    <a href="{{ url_for('resume') }}" class="navbutton top_nav">r&eacute;sum&eacute;</a>
-                    <a href="{{ url_for('code')}}" class="navbutton top_nav">code</a>
-                    <a href="{{ url_for('blog') }}" class="navbutton top_nav">blog</a>
-                    <a href="{{ url_for('contact') }}" class="navbutton top_nav">contact</a>
+                    <a href="/about" class="navbutton top_nav">about</a>
+                    <a href="/resume" class="navbutton top_nav">r&eacute;sum&eacute;</a>
+                    <a href="/code" class="navbutton top_nav">code</a>
+                    <a href="/blog" class="navbutton top_nav">blog</a>
+                    <a href="/contact" class="navbutton top_nav">contact</a>
                 <span class=span_stretch></span>
             </div>
-            {% block body %}
-            {% endblock %}
+            {{.}}
         </div>
         <a id=back-to-top href=#><img src='http://nrw-kultur.de/fileadmin/templates/iconfiles/topIcon.png'></a>
     </body>     
-   </html>    
+   </html>   

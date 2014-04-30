@@ -12,7 +12,6 @@ $(document).ready(function() {
     });
 
     $('#back-to-top').click(function(event) {
-        event.preventDefault();
-        $('html').animate({scrollTop:0}, duration);
+        $('body').animate({scrollTop:0}, duration);
     });
 });
