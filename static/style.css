@@ -93,11 +93,11 @@ p {
     height:34px 
 }
 
-.academic, .work, .cs, .interests, .java, .python { 
+.academic, .work, .cs, .interests, .java, .python, .go { 
     height: 580px 
 }
 
-.academic, .cs, .java	{ 
+.academic, .cs, .java, .go	{ 
     background: #494949; 
     color: #ddd 
 }
@@ -117,7 +117,7 @@ p {
 
 .dark_h2, a { 
     font-weight: bold; 
-    text-decoration: underline 
+    text-decoration: underline; 
 }
 
 .space { 

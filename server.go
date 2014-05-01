@@ -3,6 +3,7 @@ package main
 import (
 		"bytes"
 		"fmt"
+		"github.com/jamesmcnamara/insta_ipsum"
 		"log"
 		"net/http"
 		"os"
@@ -53,7 +54,7 @@ func loadPage(name string) (p *Page, err error) {
 	if err != nil {
 		return nil, err
 	}
-	data := make([]byte, stats.Size(), stats.Size())
+	data := make([]byte, stats.Size())
 	_, err = file.Read(data)
 	if err != nil {
 		return nil, err
@@ -89,10 +90,16 @@ func templateHTMLFiles(layout *template.Template) {
 
 //serves the correct page or static file as specified by
 //the given request pointers url path
-func handler(w http.ResponseWriter, r *http.Request) {
+func router(w http.ResponseWriter, r *http.Request) {
 	path := r.URL.Path
 	if strings.Contains(path, "static") {
 		mux.ServeHTTP(w, r)
+	} else if strings.Contains(path, "api") {
+		query_map := r.URL.Query()
+		paragraphs, ok := query_map["p"]
+		if ok {
+			fmt.Fprintf(w, ipsum.GetIpsum(strings.Join(paragraphs, ""), true))
+		}
 	} else if webpage, ok := webpageData[path]; ok {
 		fmt.Fprintf(w, webpage.content)	
 	} else {
@@ -112,7 +119,7 @@ func main() {
 	}
 	templateHTMLFiles(layout_temp)
 	mux.Handle("/", http.FileServer(http.Dir("./")))
-	http.HandleFunc("/", handler)
-	logger.Println(http.ListenAndServe(":80", nil))
+	http.HandleFunc("/", router)
+	logger.Println(http.ListenAndServe(":5000", nil))
 }
 
