@@ -91,9 +91,16 @@ func templateHTMLFiles(layout *template.Template) {
 //serves the correct page or static file as specified by
 //the given request pointers url path
 func router(w http.ResponseWriter, r *http.Request) {
+<<<<<<< HEAD
 	if path := r.URL.Path; path == "/" || path == "" {
             fmt.Fprintf(w, webpageData["/resume"].content)
         } else if strings.Contains(path, "static") {
+=======
+	
+	if path := r.URL.Path; path == "/" || path == "/" {
+		fmt.Fprintf(w, webpageData['/resume'].content)
+	} else if strings.Contains(path, "static") {
+>>>>>>> 88f1349148148d3baf4e38112047c78e4793f8e9
 		mux.ServeHTTP(w, r)
 	} else if strings.Contains(path, "api") {
 		query_map := r.URL.Query()
