@@ -1,11 +1,11 @@
 <div class=header>
     <div style='height:100px'></div>
-    <div style='float:left; width:50%; text-align:right'>
+    <div style='float:right; width:50%; text-align:right'>
         <a href='https://github.com/jamesmcnamara' style='text-indent:1em'>
             <img height=140 src='/static/imgs/github.png'>
         </a> 
     </div>
-    <div style='float:right;width:50%; text-align:left'>
+    <div style='float:left;width:50%; text-align:left'>
         <h1 style='text-indent:1em'>Projects</h1>
     </div>
     <div style='clear:both'></div>
@@ -56,7 +56,7 @@
     <div class=space></div>
     <div class=right style='text-align:right'>
         <div style='height:10px;'></div>
-        <h1 class=header_underline style="text-align:left">CryptoCyb.org<img height=80 src="/static/imgs/dogecoin.png"></h1>
+        <h1 class=header_underline style="text-align:left">CryptoCyb.org <img height=80 align=right src="/static/imgs/dogecoin.png"></h1>
         <p>For our Capstone project at Northeastern University, my group and I developed a automated trading bot which strives to predict the fluctuations in the cryptocurrency markets</p>
         <p>Our bot pulled down market data from various exchanges, as well as posts about the currencies on Reddit.com and then performed a two tiered analysis: first, it regressed the market data over various timeframes to identify the general pattern, and fed the results into a machine-learning algorithm which measured it's own historical accuracy to determine how much confidence it had in the continuation of a given trend. Second, we seperately fed Reddit posts which were flagged as relevant into a NLP suite that determined the sentiment of each post.</p>
         <p> We fed the results into a genetic algorithm that spawned traders with the previous analysis and randomly generated weights for their confidence and sentiment. We then simulated trades with these agents, and bred the agents through successive generations until we had the strongest trader of the lot, who became our official live trader (until it was outperformed)</p>
